@@ -1,0 +1,5 @@
+Esercizio 1
+SELECT * FROM client WHERE name = 'Mario'
+es 2
+SELECT * FROM client WHERE year_of_birth = 1982
+es 3
