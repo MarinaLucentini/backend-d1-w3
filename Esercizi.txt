@@ -15,4 +15,4 @@ SELECT * FROM bills
 	  JOIN suppliers USING (supplier_number) 
 es 7
 SELECT EXTRACT(YEAR FROM bills_date) FROM bills  
-	 WHERE iva = 20 ORDER BY EXTRACT(YEAR FROM bills_date)
+	 WHERE iva = 20 GROUP BY EXTRACT(YEAR FROM bills_date)
