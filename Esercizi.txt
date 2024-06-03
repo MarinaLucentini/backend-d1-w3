@@ -1,5 +1,8 @@
 Esercizio 1
 SELECT * FROM client WHERE name = 'Mario'
 es 2
-SELECT * FROM client WHERE year_of_birth = 1982
+SELECT name, surname FROM client WHERE year_of_birth = 1982
 es 3
+SELECT bills_number FROM bills WHERE iva= 20
+es 4
+SELECT * FROM product WHERE  EXTRACT (YEAR FROM product.activation_date) = 2017  and in_production = true OR on_the_market = true
