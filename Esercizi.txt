@@ -6,3 +6,10 @@ es 3
 SELECT bills_number FROM bills WHERE iva= 20
 es 4
 SELECT * FROM product WHERE  EXTRACT (YEAR FROM product.activation_date) = 2017  and in_production = true OR on_the_market = true
+es 5
+SELECT * FROM bills  JOIN client ON bills.client_id = client.client_id WHERE amount < 1000
+oppure 
+SELECT * FROM bills  JOIN client USING (client_id) WHERE amount < 1000
+es 6
+SELECT * FROM bills  
+	  JOIN suppliers USING (supplier_number) 
